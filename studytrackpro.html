@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Study Track Pro</title>
+
+    <link rel="stylesheet"
+          href="studytrackpro.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Study Track Pro</h1>
+
+        <!-- TASK SECTION -->
+
+        <div class="task-section">
+
+            <h2>📝 Daily Tasks</h2>
+
+            <input type="text"
+                   id="taskInput"
+                   placeholder="Enter your task">
+
+            <!-- SUBJECT DROPDOWN -->
+
+            <select id="subjectSelect">
+
+                <option value="maths">
+                    Maths
+                </option>
+
+                <option value="physics">
+                    Physics
+                </option>
+
+                <option value="programming">
+                    Programming
+                </option>
+
+            </select>
+
+            <button onclick="addTask()">
+                Add Task
+            </button>
+
+            <ul id="taskList"></ul>
+
+        </div>
+
+        <!-- TIMER SECTION -->
+
+        <div class="timer-section">
+
+            <h2>⏳ Pomodoro Timer</h2>
+
+            <h3 id="timer">25:00</h3>
+
+            <button onclick="startTimer()">
+                Start
+            </button>
+
+            <button onclick="resetTimer()">
+                Reset
+            </button>
+
+        </div>
+
+        <!-- STREAK SECTION -->
+
+        <div class="streak-section">
+
+            <h2>🔥 Day Streak</h2>
+
+            <h3 id="streak">0 Days</h3>
+
+        </div>
+
+        <!-- PROGRESS SECTION -->
+
+        <div class="progress-section">
+
+            <h2>📊 Subject-wise Progress</h2>
+
+            <!-- MATHS -->
+
+            <p>Maths</p>
+
+            <div class="bar">
+
+                <div class="fill"
+                     id="mathsProgress">
+
+                    0%
+
+                </div>
+
+            </div>
+
+            <!-- PHYSICS -->
+
+            <p>Physics</p>
+
+            <div class="bar">
+
+                <div class="fill"
+                     id="physicsProgress">
+
+                    0%
+
+                </div>
+
+            </div>
+
+            <!-- PROGRAMMING -->
+
+            <p>Programming</p>
+
+            <div class="bar">
+
+                <div class="fill"
+                     id="programmingProgress">
+
+                    0%
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            Created by Navami | Study Track Pro
+        </p>
+
+    </footer>
+
+    <script src="studytrackpro.js"></script>
+
+</body>
+
+</html>
